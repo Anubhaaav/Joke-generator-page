@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 main{
     background: url(https://img.freepik.com/free-photo/blurred-pop-abstract-background-pink_58702-1659.jpg?w=900&t=st=1668766356~exp=1668766956~hmac=fd56e024d695046db4ead376bc2a2dce0dd0667076f4debbbad25a4837bdd01c) center center/cover;
     display: flex;
+    padding: 50px 50px;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -22,9 +25,6 @@ header{
     max-width: 100%;
     border: 20px;
     font-size: 30px;
-
-
-
 }
 
 main div{
@@ -63,4 +63,13 @@ h3{
 }
 .btn:active{
     transform: scale(2);
+}
+
+footer{
+    background: url('https://img.freepik.com/free-vector/flat-design-yellow-comics-background_23-2148798165.jpg?w=900&t=st=1668843924~exp=1668844524~hmac=49f4fcb4e91f6f65c8fe77ea5910de724a53e3252a9e52b807d6a797c4e873de') center center/cover;
+    padding: 7px 7px;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+
 }

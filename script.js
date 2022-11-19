@@ -1,11 +1,13 @@
-const joke = document.getElementById('joke');
+const jokeEl = document.getElementById('joke');
 const get_joke = document.getElementById('get_joke');
 
 get_joke.addEventListener('click', generateJoke);
 
-aync function generateJoke() {
+generateJoke();
+
+async function generateJoke() {
     //call the API
-    const jokeRes = await fetch('https://icanhazdadjoke.com/'
+    const jokeRes = await fetch('https://icanhazdadjoke.com/',
     {
         headers: {
             accept: 'application/json'
@@ -13,9 +15,8 @@ aync function generateJoke() {
     });
 
     const joke = await jokeRes.json();
-    console.log(joke);
 
     //Set random joke
-
+    jokeEl.innerHTML = joke.joke;
 
 }
